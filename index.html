@@ -1,35 +1,237 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SENAP BD - হোম অটোমেশন ও ইলেকট্রনিক সার্ভিস</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SENAP BD - Smart Home & Electrical Services</title>
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Welcome to SENAP BD</h1>
-        <p>আপনার নির্ভরযোগ্য হোম অটোমেশন ও ইলেকট্রনিক সার্ভিস</p>
-    </header>
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    <img src="images/logo.png" alt="SENAP BD" height="40">
+    SENAP BD
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active"><a class="nav-link" href="#hero">হোম</a></li>
+      <li class="nav-item"><a class="nav-link" href="#services">সার্ভিস</a></li>
+      <li class="nav-item"><a class="nav-link" href="#about">আমাদের সম্পর্কে</a></li>
+      <li class="nav-item"><a class="nav-link" href="#reviews">রিভিউ</a></li>
+      <li class="nav-item"><a class="nav-link" href="#order">অর্ডার</a></li>
+      <li class="nav-item"><a class="nav-link" href="#contact">যোগাযোগ</a></li>
+    </ul>
+  </div>
+</nav>
 
-    <nav>
+<!-- ========== HERO SECTION ========== -->
+<header id="hero" class="hero-section d-flex align-items-center">
+  <div class="container text-center text-white">
+    <h1 class="mb-3">SENAP BD</h1>
+    <p class="mb-4">Smart Home Automation & Electrical Wiring Solutions</p>
+    <a href="#services" class="btn btn-primary">আমাদের সার্ভিস দেখুন</a>
+  </div>
+</header>
+
+<!-- ========== SERVICES SECTION ========== -->
+<section id="services" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">আমাদের সার্ভিস</h2>
+    <div class="row">
+      <!-- Service 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <!-- চাইলে service1.png বা আইকন ব্যবহার করতে পারো -->
+          <img src="images/service1.png" class="card-img-top" alt="Service 1">
+          <div class="card-body">
+            <h5 class="card-title">হোম অটোমেশন</h5>
+            <p class="card-text">
+              ঘরকে আধুনিক করতে আমাদের স্মার্ট হোম সলিউশন নিন।
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Service 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="images/service2.png" class="card-img-top" alt="Service 2">
+          <div class="card-body">
+            <h5 class="card-title">ইলেকট্রিক্যাল সার্ভিস</h5>
+            <p class="card-text">
+              পেশাদার ইলেকট্রিক্যাল ওয়ারিং ও রিপেয়ার সার্ভিস।
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Service 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="images/service3.png" class="card-img-top" alt="Service 3">
+          <div class="card-body">
+            <h5 class="card-title">ইলেকট্রনিক মেরামত</h5>
+            <p class="card-text">
+              যেকোনো ইলেকট্রনিক যন্ত্রাংশ দ্রুত ও নির্ভরযোগ্য মেরামত।
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ABOUT SECTION ========== -->
+<section id="about" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">আমাদের সম্পর্কে</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <!-- চাইলে এখানে আরেকটা ছবি বসাতে পারো: about.jpg -->
+        <img src="images/about.jpg" class="img-fluid" alt="About Us">
+      </div>
+      <div class="col-md-6">
+        <p>
+          আমরা <strong>SENAP BD</strong>, ইলেকট্রিক ও ইলেকট্রনিক সার্ভিসে অভিজ্ঞ একদল পেশাদার।
+          স্মার্ট হোম সলিউশন থেকে শুরু করে ইলেকট্রিক্যাল ওয়ারিং ও ইলেকট্রনিক ডিভাইস মেরামত –
+          সবকিছুতেই আমরা আপনাকে সেরা সার্ভিস দিয়ে থাকি।
+        </p>
         <ul>
-            <li><a href="#">হোম</a></li>
-            <li><a href="#">সার্ভিস</a></li>
-            <li><a href="#">যোগাযোগ</a></li>
+          <li>দ্রুত ও নির্ভরযোগ্য সার্ভিস</li>
+          <li>উন্নত টেকনোলজি ও সরঞ্জাম</li>
+          <li>অভিজ্ঞ টিম ও ২৪/৭ সাপোর্ট</li>
         </ul>
-    </nav>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section class="content">
-        <h2>আমাদের সেবাসমূহ</h2>
-        <p>আমরা হোম অটোমেশন, ইলেকট্রিক্যাল সার্ভিস এবং আরডুইনো প্রজেক্ট নিয়ে কাজ করি।</p>
-    </section>
+<!-- ========== REVIEWS SECTION (Disqus or অন্য কিছু) ========== -->
+<section id="reviews" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">রিভিউ</h2>
+    <p class="text-center">নিচে কাস্টমার রিভিউ দেখতে ও যোগ করতে পারবেন:</p>
+    <!-- Disqus EMBED -->
+    <!-- তোমাকে Disqus এ ফ্রি অ্যাকাউন্ট খুলে "shortname" নিতে হবে। 
+         সেই shortname নিচে 'example' এর জায়গায় বসিয়ে দাও। 
+         আর যদি Disqus না চাও, অন্য সেবা (যেমন Cactus Comments) ব্যবহার করতে পারো। -->
+    <div id="disqus_thread"></div>
+  </div>
+</section>
 
-    <footer>
-        <p>&copy; 2025 SENAP BD | Developed by বন্ধু</p>
-    </footer>
+<!-- ========== ORDER SECTION (Formspree/Google Form) ========== -->
+<section id="order" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">অর্ডার/বুকিং</h2>
+    <p class="text-center">আপনার প্রয়োজনীয় সার্ভিসের জন্য অনলাইনেই বুকিং করুন</p>
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <!-- উদাহরণ: Formspree ফর্ম -->
+        <!-- Formspree ব্যবহার করতে form action="https://formspree.io/f/your-form-id" করে নিবে -->
+        <form action="https://formspree.io/f/yourFormID" method="POST">
+          <div class="form-group">
+            <label for="name">নাম</label>
+            <input type="text" name="name" class="form-control" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">ফোন নম্বর</label>
+            <input type="text" name="phone" class="form-control" id="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="service">কোন সার্ভিস চাই</label>
+            <select name="service" id="service" class="form-control">
+              <option>হোম অটোমেশন</option>
+              <option>ইলেকট্রিক্যাল সার্ভিস</option>
+              <option>ইলেকট্রনিক মেরামত</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">বিস্তারিত</label>
+            <textarea name="message" id="message" rows="3" class="form-control"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">জমা দিন</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <script src="script.js"></script>
+<!-- ========== CONTACT SECTION ========== -->
+<section id="contact" class="py-5 bg-dark text-white">
+  <div class="container">
+    <h2 class="text-center mb-4">যোগাযোগ</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h4>আমাদের ঠিকানা</h4>
+        <p>Chirirbandar, Dinajpur, Bangladesh</p>
+        <h4>ফোন</h4>
+        <p><a href="tel:+8801894056238" class="text-white">01894056238</a></p>
+        <h4>ইমেইল</h4>
+        <p><a href="mailto:senapbd.com@gmail.com" class="text-white">senapbd.com@gmail.com</a></p>
+      </div>
+      <div class="col-md-6">
+        <h4>সোশ্যাল মিডিয়া</h4>
+        <p>
+          <a href="https://www.facebook.com/senapbd" target="_blank" class="text-white">Facebook</a><br>
+          <a href="https://x.com/SENAPBD" target="_blank" class="text-white">Twitter</a><br>
+          <a href="https://www.instagram.com/senap_bd" target="_blank" class="text-white">Instagram</a><br>
+          <a href="https://t.me/SENAP_BD" target="_blank" class="text-white">Telegram</a><br>
+          <a href="https://wa.me/+8801894056238" target="_blank" class="text-white">WhatsApp</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="bg-secondary text-white text-center py-2">
+  <p class="mb-0">&copy; 2025 SENAP BD. All Rights Reserved.</p>
+</footer>
+
+<!-- ========== DISQUS SCRIPT (সত্যিকারের shortname বসাতে হবে) ========== -->
+<script>
+/**
+ * Disqus comment system
+ * Replace 'example' with your Disqus shortname
+ */
+(function() { 
+  var d = document, s = d.createElement('script');
+  s.src = 'https://example.disqus.com/embed.js';  
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>দয়া করে মন্তব্য দেখতে জাভাস্ক্রিপ্ট চালু করুন</noscript>
+
+<!-- ========== TAWK.TO SCRIPT (তোমার অ্যাকাউন্ট আইডি বসাবে) ========== -->
+<script type="text/javascript">
+/*
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+ var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+ s1.async=true;
+ s1.src='https://embed.tawk.to/YOUR_PROPERTY_ID/1gqxxxxx';
+ s1.charset='UTF-8';
+ s1.setAttribute('crossorigin','*');
+ s0.parentNode.insertBefore(s1,s0);
+})();
+*/
+</script>
+
+<!-- ========== BOOTSTRAP & JS ========== -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Custom Script -->
+<script src="script.js"></script>
 </body>
-</html>
+    </html>
